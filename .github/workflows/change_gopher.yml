@@ -1,0 +1,41 @@
+name: Change Gopher
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  change-gopher:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+
+      - name: Change gopher
+        id: change
+        run: |
+          output=$(python scripts/change-gopher.py)
+          echo "$output"
+          gopher_file=$(echo "$output" | grep "GOPHER_FILE=" | cut -d'=' -f2)
+          echo "gopher_file=$gopher_file" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: change gopher to ${{ steps.change.outputs.gopher_file }}"
+            git push
+          fi
