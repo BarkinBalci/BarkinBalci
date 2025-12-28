@@ -2,7 +2,7 @@
 
 <div align="center">
 <!-- GOPHER_START -->
-<img src="./gophers/gamer.svg" height="300" alt="Daily Gopher">
+<img src="./gophers/soldering.svg" height="300" alt="Daily Gopher">
 <!-- GOPHER_END -->
 </div>
 
