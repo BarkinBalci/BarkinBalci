@@ -2,7 +2,7 @@
 
 <div align="center">
 <!-- GOPHER_START -->
-<img src="./gophers/music.svg" height="300" alt="Daily Gopher">
+<img src="./gophers/hiking.svg" height="300" alt="Daily Gopher">
 <!-- GOPHER_END -->
 </div>
 
