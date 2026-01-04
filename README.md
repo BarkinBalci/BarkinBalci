@@ -4,6 +4,8 @@
 <!-- GOPHER_START -->
 <img src="./gophers/hiking.svg" height="300" alt="Daily Gopher">
 <!-- GOPHER_END -->
+<br>
+<sub><i>Gophers lovingly crafted by <a href="https://github.com/egonelbre/gophers">@egonelbre</a> 💙</i></sub>
 </div>
 
 [![Change Gopher](https://img.shields.io/github/actions/workflow/status/BarkinBalci/BarkinBalci/change_gopher.yml?style=for-the-badge&label=Change%20Gopher)](https://github.com/BarkinBalci/BarkinBalci/actions/workflows/change_gopher.yml)
