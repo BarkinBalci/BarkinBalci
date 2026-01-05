@@ -5,6 +5,7 @@ import re
 import sys
 from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 REPO_ROOT = Path(__file__).parent.parent
 GOPHERS_DIR = REPO_ROOT / "gophers"
@@ -38,7 +39,7 @@ def get_regular_gophers() -> list[str]:
 
 def select_gopher() -> str:
     """Select a gopher based on the current date."""
-    today = datetime.now()
+    today = datetime.now(ZoneInfo("Etc/GMT-3"))
     date_key = (today.month, today.day)
 
     if date_key in SPECIAL_GOPHERS:
