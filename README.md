@@ -2,7 +2,7 @@
 
 <div align="center">
 <!-- GOPHER_START -->
-<img src="./gophers/heart-hug.svg" height="300" alt="Daily Gopher">
+<img src="./gophers/stovepipe-hat.svg" height="300" alt="Daily Gopher">
 <!-- GOPHER_END -->
 <br>
 <sub><i>Gophers lovingly crafted by <a href="https://github.com/egonelbre/gophers">@egonelbre</a> 💙</i></sub>
