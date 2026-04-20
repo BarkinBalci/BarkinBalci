@@ -2,7 +2,7 @@
 
 <div align="center">
 <!-- GOPHER_START -->
-<img src="./gophers/soldering.svg" height="300" alt="Daily Gopher">
+<img src="./gophers/witch-learning.svg" height="300" alt="Daily Gopher">
 <!-- GOPHER_END -->
 <br>
 <sub><i>Gophers lovingly crafted by <a href="https://github.com/egonelbre/gophers">@egonelbre</a> 💙</i></sub>
